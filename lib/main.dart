@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           bottom: TabBar(
@@ -37,20 +37,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.circular(70), // Creates border
                 color: Colors.orangeAccent),
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.airplane_ticket_sharp)),
+              Tab(icon: Icon(Icons.signal_wifi_connected_no_internet_4)),
+              Tab(icon: Icon(Icons.search)),
+              Tab(icon: Icon(Icons.settings)),
             ],
           ),
-          title: Text('Tabs Demo'),
+          title: Text('Tabs Juarez Lopez Angel Arturo'),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
-            Icon(Icons.airplane_ticket_sharp, size: 350),
+            Icon(Icons.signal_wifi_connected_no_internet_4, size: 350),
+            Icon(Icons.search, size: 350),
+            Icon(Icons.settings, size: 350),
           ],
         ),
       ),
